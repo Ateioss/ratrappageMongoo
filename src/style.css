@@ -26,6 +26,7 @@ body{
      height:100vh;
      width:100vw;
      background-color: #fff;
+     grid-column-start:3 !important;
 }
 #mongoo-nav {
     position: relative;
@@ -49,7 +50,7 @@ body{
     display: flex;
     justify-items: center;
 }
-#mongoo-order-button {
+.mongoo-order-button {
     display: inline-block;
 	font-weight: 400;
 	color: #212529;
@@ -62,6 +63,21 @@ body{
 	color: #38b2ac;;
 	background-color: #fff;
     height: 68%;
+}
+.mongoo-order-button-second {
+  display: inline-block;
+font-weight: 400;
+color: #212529;
+text-align: center;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1.5rem;
+line-height: 1.5;
+border-radius: .25rem;
+color: #fff;;
+background-color:#B2D234;
+  height: 68%;
+  width:75%;
 }
 
 #mongoo-links-container{
@@ -80,7 +96,9 @@ body{
     text-decoration: none;
     transition-duration: 300ms;
 }
-
+#second-page-title {
+color: #B2D234;
+}
 .mongoo-links:hover {
     color: #38b2ac;
 }
@@ -116,16 +134,33 @@ body{
     rotate: -7deg;
 }
 
+.second-page-desc{
+  color:#606060;
+}
+p.stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: white;
+}
 
+.grid{
+  display:grid;
+  grid-template-columns:80px 100px 150px; /* 3 colonnes de largeur différente */
+  grid-template-rows:100px 200px 100px; 
+  grid-gap:12px; 
+  gap:12px; /* gouttière (mettre les deux lignes)*/
+  padding:0; 
+  margin:12px;
+  height:44vh;
+}
 
-
-
-
-
-
-
-
-
+.grid>li{
+  padding:0.6rem;
+  margin:0;
+  color:#fff;
+  margin:0;
+  display:block;
+}
 
 
 
@@ -142,7 +177,7 @@ body{
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Trebuchet MS;
+    font-family: Poppins;
   } 
     
   
@@ -157,6 +192,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width:100vw;
   }
   
   .hero-text {
@@ -174,16 +210,12 @@ body{
   
   h1 {
     margin: 0 0 3rem 0;
-    font-family: 'Varta', sans-serif;
-    text-shadow: 2px 2px black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
   }
-  
-  p {
-    font-family: 'Archivo', sans-serif;
-    text-shadow: 2px 2px black;
-    letter-spacing: 3px;
-    color: white;
-  }
+ 
   
   nav {
     padding: 1em 1em;
